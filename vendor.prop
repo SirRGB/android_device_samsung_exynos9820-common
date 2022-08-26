@@ -37,6 +37,7 @@ ro.vendor.eden.npu.version.path=/sys/devices/platform/npu@17800000/version
 ro.frp.pst=/dev/block/persistent
 
 ## Graphics
+debug.sf.enable_transaction_tracing=false
 debug.sf.disable_backpressure=1
 debug.renderengine.backend=threaded
 persist.sys.sf.color_saturation=1.0

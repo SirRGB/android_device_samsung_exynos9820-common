@@ -63,6 +63,10 @@ on init
     chown system system /sys/class/timed_output/vibrator/intensity
     chown system system /sys/class/timed_output/vibrator/motor_type
 
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache 
+
 on early-fs
     # tzic need to be grand permission before vold
     chown system net_bt_admin /dev/tzic

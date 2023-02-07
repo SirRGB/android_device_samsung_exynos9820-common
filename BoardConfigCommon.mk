@@ -53,6 +53,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 
 ## Camera
 $(call soong_config_set,exynos9820CameraVars,exynos9820_model,$(TARGET_DEVICE))
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 ## DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
